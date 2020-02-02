@@ -31,5 +31,8 @@ while True:
   status2=status1.rsplit("'")
   status=status2[3]
   print("Статус:"+status)
-  print(str(counter)+" раз сменился статус")
+  countertype = " "
+  if counter == 2 or counter == 3 or counter == 4:countertype=" раза сменился статус."
+  else :countertype = " раз сменился статус."
+  print(str(counter)+countertype)
   time.sleep(60)
